@@ -1,0 +1,9 @@
+
+[project]
+name = "app"
+version = "0.1.0"
+description = "Learn to build dark-matter"
+requires-python = "~=3.12"
+dependencies = [
+    "dark-matter==4.0.89",
+]

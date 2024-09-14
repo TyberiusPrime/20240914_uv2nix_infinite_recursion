@@ -1,0 +1,27 @@
+warning: Git tree '/project/builds/hammer_build_dark-matter_4.0.89/build' is dirty
+trace: numpy matched to 2.1.0
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/wzx1ba5hqqfa23vfrvqmfmkpj25p37mr-source/lib/customisation.nix:365:7:
+          364|     in commonAttrs // {
+          365|       drvPath = assert condition; drv.drvPath;
+             |       ^
+          366|       outPath = assert condition; drv.outPath;
+
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/wzx1ba5hqqfa23vfrvqmfmkpj25p37mr-source/lib/customisation.nix:365:7:
+          364|     in commonAttrs // {
+          365|       drvPath = assert condition; drv.drvPath;
+             |       ^
+          366|       outPath = assert condition; drv.outPath;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:34:12:
+           33|
+           34|   strict = derivationStrict drvAttrs;
+             |            ^
+           35|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: infinite recursion encountered
